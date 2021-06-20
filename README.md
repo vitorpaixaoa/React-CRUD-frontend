@@ -40,17 +40,16 @@ Este é a parte frontend desenvolvida em React do projeto. A API pode ser vista 
 
 <p align="center">
    <img src="https://github.com/vitorpaixaoa/React-CRUD-frontend/blob/master/public/project-imgs/Pagina-de-Login.png" alt="Página de Login" />
-    Nessa página o usário faz login no aplicativo.
-  Como <strong>admin:</strong>
-        <strong>login:</strong> admin
-        <strong>login:</strong> admin
+  Nessa página o usário faz login no aplicativo com o usuário <strong>admin</strong> ou <strong>user</strong> e a senha 123456
   
 </p>
 <p align="center">
-   <img src="https://github.com/vitorpaixaoa/siteEcommerce/blob/master/static/img-site/produto.png" alt="Most-Used-Words" />
+   <img src="https://github.com/vitorpaixaoa/React-CRUD-frontend/blob/master/public/project-imgs/Lista-de-Clientes.png" alt="Most-Used-Words" />
+    Aqui, caso o o usuário seja admin, ele pode excluir, adicionar e atualizar usuários. Caso contrário ele pode apneas olhar os detalhes.
 </p>
 <p align="center">
-   <img src="https://github.com/vitorpaixaoa/siteEcommerce/blob/master/static/img-site/carrinho.png" alt="Most-Used-Words" />
+   <img src="https://github.com/vitorpaixaoa/React-CRUD-frontend/blob/master/public/project-imgs/Registrar-Cliente-Validacao.png" alt="Most-Used-Words" />
+    Ao registrar um usuário, o formulário é validado ao digitar e aplica as máscaras para os campos selecionados.
 </p>
 <p align="center">
    <img src="https://github.com/vitorpaixaoa/siteEcommerce/blob/master/static/img-site/checkout.png" alt="Most-Used-Words" />
@@ -65,7 +64,6 @@ Este é a parte frontend desenvolvida em React do projeto. A API pode ser vista 
 - [**CSS**]()
 - [**JAVASCRIPT**]()
 - [**REACTJS**]()
-- [**NEXTJS**]()
 - [**REDUX**]()
 
 
