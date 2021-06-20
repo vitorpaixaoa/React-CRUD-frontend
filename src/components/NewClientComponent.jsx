@@ -73,15 +73,15 @@ class NewClientComponent extends Component {
         }
 
         const erros = validateFormToSubmit(client);
-        if(erros){
+        if (erros) {
             ClientsService.newClient(client).then(res => {
                 this.props.history.push('/clients')
             });
-        }else{
-            console.log( " houve um erro" )
+        } else {
+            console.log(" houve um erro")
             return;
         }
-        
+
     }
 
     cancel() {
@@ -101,13 +101,26 @@ class NewClientComponent extends Component {
 
 
     changeSelectPhone2 = (e) => {
-        
+
         if (e.target.value === "cellphone") {
             this.setState({ is_phone2: true });
             this.setState({ phone_type2: e.target.value })
         } else {
             this.setState({ is_phone2: false });
             this.setState({ phone_type2: e.target.value })
+        }
+    }
+
+    changeName = (value) => {
+        this.setState({ "name": value })
+    }
+
+    checkChar = (key) => {
+        const char = String.fromCharCode(key.charCode)
+        const pattern = "[a-zA-Z0-9 ]";
+
+        if (!char.match(pattern)) {
+            key.preventDefault()
         }
     }
 
@@ -141,8 +154,8 @@ class NewClientComponent extends Component {
                                         <div>
                                             <div className="form-group">
                                                 <label>Nome *</label>
-                                                <input required type="text" name="name" required placeholder="Nome do cliente..." className="form-control"
-                                                    value={this.state.name} pattern="[a-zA-Z0-9]+" onChange={(e) => this.onChange("name", e.target.value)} />
+                                                <input required type="text" name="name" onKeyPress={(e) => this.checkChar(e)} required placeholder="Nome do cliente..." className="form-control"
+                                                    value={this.state.name} pattern={"[a-zA-Z0-9]+"} onChange={(e) => this.changeName(e.target.value)} />
                                                 <span id="namemsg" className="text-muted"></span>
                                             </div>
                                             <div className="form-group">
@@ -170,7 +183,7 @@ class NewClientComponent extends Component {
 
                                             <h5>Telefones</h5>
                                             <div className="row">
-                                            <div className="form-group justify-content-center type-phone col-md-auto">
+                                                <div className="form-group justify-content-center type-phone col-md-auto">
                                                     <label >Tipo de telefone *</label>
                                                     <select defaultValue="" id="phoneSelect1" name="phone_type" onChange={this.changeSelectPhone1} className="form-select">
                                                         <option value="" disabled>-- Selecione --</option>
@@ -181,14 +194,14 @@ class NewClientComponent extends Component {
                                                 </div>
                                                 <div className="form-group col-md-8">
                                                     <label>Telefone principal *</label>
-                                                    <InputMask name="phone" id="phone" disabled={ this.state.phone_type === "" ? true : false } mask={this.state.is_phone ? "(99) 99999-9999" : "(99) 9999-9999"} required type="text" required placeholder={this.state.is_phone ? "(XX) XXXXX-XXXX" : "(XX) XXXX-XXXX"} className="form-control"
+                                                    <InputMask name="phone" id="phone" disabled={this.state.phone_type === "" ? true : false} mask={this.state.is_phone ? "(99) 99999-9999" : "(99) 9999-9999"} required type="text" required placeholder={this.state.is_phone ? "(XX) XXXXX-XXXX" : "(XX) XXXX-XXXX"} className="form-control"
                                                         value={this.state.phone} onChange={(e) => this.onChange("phone", e.target.value)} />
                                                     <span id="phonemsg" className="text-muted"></span>
                                                 </div>
-                                                
+
                                             </div>
                                             <div className="row">
-                                            <div className="form-group justify-content-center type-phone col-md-auto">
+                                                <div className="form-group justify-content-center type-phone col-md-auto">
                                                     <label >Tipo de telefone 2</label>
                                                     <select defaultValue="" name="phone_type2" onChange={this.changeSelectPhone2} className="form-select">
                                                         <option value="" disabled>-- Selecione --</option>
@@ -200,10 +213,10 @@ class NewClientComponent extends Component {
                                                 <div className="form-group col-md-8">
                                                     <label>Telefone secundário</label>
                                                     <InputMask id="phone2" id="phone2" type="text" mask={this.state.is_phone2 ? "(99) 99999-9999" : "(99) 9999-9999"} placeholder={this.state.is_phone2 ? "(XX) XXXXX-XXXX" : "(XX) XXXX-XXXX"} className="form-control"
-                                                        value={this.state.phone2} disabled={ this.state.phone_type === "" ? true : false } onChange={(e) => this.onChange("phone2", e.target.value)} />
+                                                        value={this.state.phone2} disabled={this.state.phone_type === "" ? true : false} onChange={(e) => this.onChange("phone2", e.target.value)} />
                                                     <span id="phone2msg" className="text-muted"></span>
                                                 </div>
-                                                
+
                                             </div>
 
                                             <br />
