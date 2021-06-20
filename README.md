@@ -58,7 +58,6 @@ Este é a parte frontend desenvolvida em React do projeto. A API pode ser vista 
 - [**CSS**]()
 - [**JAVASCRIPT**]()
 - [**REACTJS**]()
-- [**REDUX**]()
 
 
 
