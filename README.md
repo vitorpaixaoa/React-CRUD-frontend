@@ -25,7 +25,7 @@
 <!--Sobre o projeto-->
 ## 💻 Sobre o projeto
 
-Este site está sendo desenvolvido para loja virtual da empresa Espaço Zellus. O intuito é não limitar-se a vender somente em loja física e sim permitir que os produtos sejam enviados para qualquer lugar.
+Este é a parte frontend desenvolvida em React do projeto. A API pode ser vista clicando <a href="https://github.com/vitorpaixaoa/springboot-backend">aqui</a>.
 <!--Funcionalidades-->
 ## ⚙️Funcionalidades
 
