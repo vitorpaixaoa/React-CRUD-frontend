@@ -51,12 +51,6 @@ Este é a parte frontend desenvolvida em React do projeto. A API pode ser vista 
    <img src="https://github.com/vitorpaixaoa/React-CRUD-frontend/blob/master/public/project-imgs/Registrar-Cliente-Validacao.png" alt="Most-Used-Words" />
     Ao registrar um usuário, o formulário é validado ao digitar e aplica as máscaras para os campos selecionados.
 </p>
-<p align="center">
-   <img src="https://github.com/vitorpaixaoa/siteEcommerce/blob/master/static/img-site/checkout.png" alt="Most-Used-Words" />
-</p>
-<p align="center">
-   <img src="https://github.com/vitorpaixaoa/siteEcommerce/blob/master/static/img-site/area-cliente.png" alt="Most-Used-Words" />
-</p>
 
 <!--layout-->
 ## 🚀  Tecnologias
@@ -72,7 +66,7 @@ Este é a parte frontend desenvolvida em React do projeto. A API pode ser vista 
 - [**VS CODE**]()
 <hr/>
 #### RODANDO APLICAÇÃO
-Para rodar use "npm install" e depois "npm start", precisa da <a href="https://github.com/vitorpaixaoa/api_rest_ecommerce"> <strong> Ecommerce-API </strong> </a> rodando para funcionar.
+Para rodar use "npm install" e depois "npm start", precisa da <a href="https://github.com/vitorpaixaoa/springboot-backend"> <strong> Ecommerce-API </strong> </a> rodando para funcionar.
 
 <!--License session-->
 ## 📝 Licença
