@@ -136,6 +136,19 @@ class UpdateClientComponent extends Component {
 
     }
 
+    changeName = (value) => {
+        this.setState({ "name": value })
+    }
+
+    checkChar = (key) => {
+        const char = String.fromCharCode(key.charCode)
+        const pattern = "[a-zA-Z0-9 ]";
+
+        if (!char.match(pattern)) {
+            key.preventDefault()
+        }
+    }
+
     numFormat = (str) => {
         if (str) {
             return str.replace(/[^\d]+/g, '');
@@ -176,7 +189,7 @@ class UpdateClientComponent extends Component {
 
                                     <div className="form-group">
                                         <label>Nome *</label>
-                                        <input required type="text" name="name" required placeholder="Nome do cliente..." className="form-control"
+                                        <input required type="text" name="name" onKeyPress={(e) => this.checkChar(e)} required placeholder="Nome do cliente..." className="form-control"
                                             value={this.state.name} pattern="[a-zA-Z0-9]+" onChange={(e) => this.onChange("name", e.target.value)} />
                                         <span id="namemsg" className="text-muted"></span>
                                     </div>
