@@ -2,7 +2,7 @@
 
 <p align="center">
   <h1> Sistema CRUD de Clientes  </h1>
-   <img src="https://github.com/vitorpaixaoa/siteEcommerce/blob/master/static/img-site/Pagina-inicial.png" alt="Pedidos" />
+   <img src="https://github.com/vitorpaixaoa/React-CRUD-frontend/blob/master/public/project-imgs/Lista-de-Clientes.png" alt="Clientes" />
 </p>
 
 <!-- Badges -->
