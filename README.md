@@ -29,7 +29,7 @@ Este é a parte frontend desenvolvida em React do projeto. A API pode ser vista 
 <!--Funcionalidades-->
 ## ⚙️Funcionalidades
 
-   Esse site, conta com uma jornada de compra simples e bem intuitiva para que o objetivo de converter o cliente seja o mais eficaz possível, assim, com base nos prévios conhecimentos de UX/Designer adotei cores que evidenciem principalmente o produto, assim, senso adotado o esquema de preto e branco. Além disso, o usuário do site poderá fazer pedidos (na versão disponível ao GitHub, será utilizada a API do PagSeguro para mediar os pagamentos ), calcular frete por meio do web service dos Correios, ele pode checkar seus pedidos já feitos, checkar status e também cancela-los caso permitido, além disso o usuário poderá alterar seus dados com facilidade através da página do cliente. Para o funcionamento, o sistema precisa estar conectado com a API que também está disponível no GitHub em <a href="https://github.com/vitorpaixaoa/api_rest_ecommerce"> <strong> Ecommerce-API </strong> </a> pois os produtos são fornecidos e registrados pelo administrador  através da DashBoard disponível <a href="https://github.com/vitorpaixaoa/dashboard_ecommerce">aqui.</a>
+   Nesse site, pode-se logar como User ou Admin. Caso seja um user comum, ele pode olhar a lista de clientes disponíveis. Caso esteja como Admin, ele pode Criar clientes novos, vizualizar detalhes de cada cliente e removê-los.
 
 <!--Funcionalidades-->
 ## Como está dividido
@@ -39,7 +39,12 @@ Este é a parte frontend desenvolvida em React do projeto. A API pode ser vista 
 ## 🎨Layout PC
 
 <p align="center">
-   <img src="https://github.com/vitorpaixaoa/siteEcommerce/blob/master/static/img-site/produto-pagina-inicial.png" alt="Produto Inicial" />
+   <img src="https://github.com/vitorpaixaoa/React-CRUD-frontend/blob/master/public/project-imgs/Pagina-de-Login.png" alt="Página de Login" />
+    Nessa página o usário faz login no aplicativo.
+  Como <strong>admin:</strong>
+        <strong>login:</strong> admin
+        <strong>login:</strong> admin
+  
 </p>
 <p align="center">
    <img src="https://github.com/vitorpaixaoa/siteEcommerce/blob/master/static/img-site/produto.png" alt="Most-Used-Words" />
